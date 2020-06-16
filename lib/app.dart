@@ -1,3 +1,7 @@
+import 'package:consultoriaapp/telaCliente.dart';
+import 'package:consultoriaapp/telaContato.dart';
+import 'package:consultoriaapp/telaEmpresa.dart';
+import 'package:consultoriaapp/telaServico.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
@@ -6,13 +10,25 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-  void _abrirEmpresa() {}
+  void _abrirEmpresa() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => TelaEmpresa()));
+  }
 
-  void _abrirServicos() {}
+  void _abrirServicos() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => TelaServico()));
+  }
 
-  void _abrirClientes() {}
+  void _abrirClientes() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => TelaCliente()));
+  }
 
-  void _abrirContato() {}
+  void _abrirContato() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => TelaContato()));
+  }
 
   @override
   Widget build(BuildContext context) {
