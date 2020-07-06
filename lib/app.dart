@@ -35,7 +35,7 @@ class _AppState extends State<App> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-          title: Text("ATI Consultoria"), backgroundColor: Colors.purple),
+          title: Text("ATM Consultoria"), backgroundColor: Colors.purple),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
